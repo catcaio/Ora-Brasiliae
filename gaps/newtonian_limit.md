@@ -2,25 +2,24 @@
 
 ## Objetivo
 
-Documentar a recuperação do limite newtoniano apenas como fechamento condicional, dependente de hipóteses adicionais de campo fraco e regime estático.
+Registrar o limite newtoniano como fechamento condicional, dependente de hipóteses explícitas de campo fraco e regime estático.
 
 ---
 
-## Estrutura
+## Relação com o Notebook 06
 
-A recuperação de Poisson exige:
-- aproximação de campo fraco;
-- regime estático ou quase-estático;
-- matching apropriado entre a estrutura local e o setor fraco gravitacional.
+O notebook `notebooks/06_newtonian_limit.ipynb` fixa simbolicamente:
+- a forma de Poisson;
+- a dependência de campo fraco;
+- a dependência de matching estático ou quase-estático.
 
 ---
 
 ## Estatuto do Resultado
 
-O limite newtoniano:
 - não pertence ao claim mínimo;
-- não decorre automaticamente do fechamento nulo-local;
-- exige hipóteses adicionais além do core.
+- não decorre automaticamente do core;
+- exige hipóteses adicionais além do fechamento nulo-local.
 
 ---
 
@@ -28,18 +27,12 @@ O limite newtoniano:
 
 - Categoria: FECHADO CONDICIONALMENTE
 - Pertence ao Core: NÃO
-- Função: registrar um fechamento útil, mas fora do núcleo mínimo
+- Função: registrar um fechamento útil, mas não canônico
 
 ---
 
 ## Limitações
 
-- Não é derivação canônica do core;
-- Não deve ser usado para redefinir o escopo do claim mínimo;
-- Depende de matching adicional e hipóteses fraco-estáticas.
-
----
-
-## Papel no Repositório
-
-Este arquivo mantém o limite newtoniano como suporte técnico separado, sem promovê-lo ao núcleo irredutível.
+- não é derivação automática do núcleo;
+- depende de hipóteses adicionais;
+- não altera o claim mínimo.
