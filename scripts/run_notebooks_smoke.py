@@ -16,6 +16,8 @@ NOTEBOOKS = [
     "notebooks/05_bianchi_and_phi.ipynb",
     "notebooks/06_newtonian_limit.ipynb",
     "notebooks/07_claim_minimo.ipynb",
+    "notebooks/08_gap10_numeric_scan.ipynb",
+    "notebooks/09_newtonian_parameter_scan.ipynb",
 ]
 
 
