@@ -2,33 +2,34 @@
 
 ## Objetivo
 
-Documentar o fechamento condicional associado ao termo logarítmico e ao coeficiente do GAP-10, distinguindo explicitamente o que é robusto do que depende do esquema de regularização.
+Documentar o fechamento condicional associado ao termo logarítmico do GAP-10, distinguindo explicitamente a parte estruturalmente robusta da parte dependente do esquema de regularização.
 
 ---
 
-## Estrutura do Problema
+## Resultado Estrutural
 
-O fechamento do GAP-10 envolve:
-- um setor logarítmico estruturalmente robusto;
-- um coeficiente sensível ao esquema de regularização;
-- dependência explícita de escolhas de cutoff e medida.
-
----
-
-## Parte Robusta
-
-A forma logarítmica do termo é a parte estruturalmente estável do fechamento.
-
-Ela permanece como componente utilizável do programa mesmo quando o coeficiente exato depende do esquema.
+A forma logarítmica
+log(wUV / wIR)
+é a parte robusta do fechamento.
 
 ---
 
-## Parte Condicional
+## Dependência de Esquema
 
-O coeficiente exato:
+O prefator multiplicativo:
 - depende da regularização adotada;
-- depende da medida no espaço de modos;
-- pode depender da normalização e do tratamento de cutoff IR/UV.
+- depende da medida;
+- depende da normalização;
+- não deve ser tratado como coeficiente universal derivado.
+
+---
+
+## Relação com a Auditoria Simbólica
+
+O notebook `notebooks/04_gap10_symbolic.ipynb` fixa:
+- a integral robusta;
+- a parametrização explícita do prefator dependente de esquema;
+- a classificação correta como FECHADO CONDICIONALMENTE.
 
 ---
 
@@ -36,18 +37,12 @@ O coeficiente exato:
 
 - Categoria: FECHADO CONDICIONALMENTE
 - Pertence ao Core: NÃO
-- Função: registrar um fechamento utilizável, mas não promovível ao claim mínimo
+- Função: preservar um fechamento utilizável sem promovê-lo ao claim mínimo
 
 ---
 
 ## Limitações
 
-- Não é universal sem hipótese adicional;
-- Não pode ser tratado como derivação independente de esquema;
-- Não deve ser promovido a resultado canônico do núcleo mínimo.
-
----
-
-## Papel no Repositório
-
-Este arquivo preserva o cálculo como suporte técnico, sem diluir a blindagem do core.
+- Não há universalidade do coeficiente exato;
+- Não há derivação independente de esquema;
+- O resultado não pertence ao núcleo mínimo.
