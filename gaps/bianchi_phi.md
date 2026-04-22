@@ -2,33 +2,24 @@
 
 ## Objetivo
 
-Documentar a promoção de c_eff para um campo efetivo φ(x) apenas como completamento consistente, preservando a covariância formal sem promovê-la ao status de derivação inevitável do núcleo.
+Documentar a extensão covariante em que φ(x) aparece como ansatz de completamento consistente, explicitamente fora do núcleo mínimo.
 
 ---
 
-## Estrutura do Completamento
+## Relação com o Notebook 05
 
-A promoção:
-c_eff → φ(x)
-
-é tratada como ansatz de covariância, introduzido para manter consistência formal em extensões além do fechamento local projetado.
-
----
-
-## Motivação Formal
-
-Este completamento visa:
-- compatibilizar a estrutura efetiva com identidade de Bianchi;
-- introduzir termos corretivos quando necessário;
-- preservar coerência formal em uma extensão não canônica.
+O notebook `notebooks/05_bianchi_and_phi.ipynb` fixa apenas:
+- a presença simbólica de φ(x);
+- o papel formal de J_info;
+- a natureza não-canônica da extensão.
 
 ---
 
 ## Estatuto do Resultado
 
-- não pertence ao claim mínimo;
-- não é derivação obrigatória do core;
-- é apenas uma extensão consistente sob hipóteses explícitas.
+- φ(x) não é derivação inevitável do core;
+- J_info é termo corretivo formal;
+- a extensão permanece fora do claim mínimo.
 
 ---
 
@@ -36,18 +27,12 @@ Este completamento visa:
 
 - Categoria: COMPLETAMENTO CONSISTENTE
 - Pertence ao Core: NÃO
-- Função: registrar uma possível extensão covariante sem promovê-la a resultado derivado
+- Função: preservar uma extensão covariante possível sem promovê-la a necessidade teórica
 
 ---
 
 ## Limitações
 
-- Depende de ansatz adicional;
-- Pode exigir corrente corretiva formal;
-- Não deve ser confundido com parte necessária do fechamento local.
-
----
-
-## Papel no Repositório
-
-Este arquivo preserva a extensão escalar-tensorial como trilha separada, explicitamente fora do núcleo mínimo.
+- depende de ansatz adicional;
+- não demonstra fechamento a partir de primeiros princípios;
+- não altera o núcleo mínimo.
