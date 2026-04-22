@@ -2,27 +2,16 @@
 
 ## Objetivo
 
-Registrar, em caráter exploratório e não canônico, pontos de distinção conceitual e estrutural entre o programa de Ora Brasiliae e formulações correlatas da literatura.
+Registrar, em caráter exploratório, a função editorial deste arquivo como espaço de comparação externa, sem convertê-lo em prova de novidade ou parte do núcleo.
 
 ---
 
 ## Escopo
 
-Este documento não introduz prova de novidade e não altera o núcleo matemático.
-
-Sua função é apenas:
-- mapear proximidades estruturais;
+Este arquivo serve apenas para:
+- mapear proximidades com a literatura;
 - registrar diferenças de formulação;
-- evitar confusão editorial entre claim mínimo e contexto comparativo.
-
----
-
-## Uso Correto
-
-Comparações com a literatura:
-- são úteis para posicionamento conceitual;
-- não fazem parte do claim mínimo;
-- não substituem fechamento matemático.
+- evitar confusão entre claim mínimo e posicionamento externo.
 
 ---
 
@@ -36,12 +25,6 @@ Comparações com a literatura:
 
 ## Limitações
 
-- Não serve como argumento de validação matemática;
-- Não prova prioridade ou originalidade;
-- Não deve ser usado para reforçar overclaim.
-
----
-
-## Papel no Repositório
-
-Este arquivo mantém o diálogo com a literatura em uma trilha separada do núcleo canônico.
+- não prova originalidade;
+- não substitui fechamento matemático;
+- não altera o claim mínimo.
