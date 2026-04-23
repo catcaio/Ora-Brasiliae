@@ -47,3 +47,15 @@ Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de q
 - FECHADO CONDICIONALMENTE: exige hipótese explícita.
 - COMPLETAMENTO CONSISTENTE: não quebra a teoria, mas não é inevitável.
 - HIPÓTESE EXTERNA: não derivada do núcleo.
+
+## 10. Reprodutibilidade de ambiente
+- `requirements.txt` define dependências diretas do projeto.
+- `requirements.lock` fixa versões exatas (incluindo transitivas) para execução determinística.
+- Para recriar ambiente auditável:
+  1. `python3 -m venv .venv`
+  2. `. .venv/bin/activate`
+  3. `python -m pip install --upgrade pip`
+  4. `python -m pip install -r requirements.lock`
+
+Sempre que `requirements.txt` mudar, regenerar `requirements.lock` em ambiente limpo antes de commitar.
+
