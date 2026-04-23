@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Este documento define o procedimento mínimo para reproduzir a execução dos notebooks do repositório.
+Este documento define o procedimento mínimo para reproduzir a execução dos notebooks e a tradução de parâmetros do repositório.
 
 ---
 
@@ -42,17 +42,31 @@ Este documento define o procedimento mínimo para reproduzir a execução dos no
 16. notebooks/15_physical_system_mapping.ipynb
 17. notebooks/16_signal_vs_noise_analysis.ipynb
 18. notebooks/17_experimental_window_estimation.ipynb
-19. python scripts/extract_results_layer.py
+19. notebooks/18_measurement_simulation.ipynb
+20. python scripts/extract_results_layer.py
+21. python scripts/parameter_translation.py
+
+---
+
+## Verificação adicional (MPV-58)
+
+Executar a tradução de parâmetros com saída textual e JSON:
+
+```bash
+python scripts/parameter_translation.py
+python scripts/parameter_translation.py --json
+```
 
 ---
 
 ## Critério de sucesso
 
-- todos os notebooks `00`–`17` executam sem erro
+- todos os notebooks `00`–`18` executam sem erro
 - outputs persistem
 - nenhuma previsão é promovida ao core durante a execução
 - fingerprints de output não apresentam drift em relação ao baseline versionado
 - artefatos `results/prediction_notebooks_10_17.json` e `docs/13_results_extraction_layer.md` são gerados sem erro
+- tradução de parâmetros reproduz os valores de ordem de grandeza documentados
 
 ---
 
@@ -71,6 +85,7 @@ Comandos:
 
 Sem drift: saída com `status=pass`.
 Com drift: saída com `status=drift_detected` e lista de notebooks alterados.
+
 
 ---
 

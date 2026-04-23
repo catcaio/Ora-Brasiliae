@@ -36,13 +36,16 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /gaps/: fechamentos condicionais e completamentos consistentes
 - /notebooks/: auditoria simbólica e numérica
 - /appendices/: histórico e exploração
-- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods e preparação experimental
+- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods, guias pré-experimentais e preparação experimental
 - /bibliography/: fontes por confiança
 - /data/: dados de entrada para pipelines experimentais
 - /results/: artefatos auditáveis gerados por scripts
 
 ## 8. Uso
-Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`17`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
+Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`18`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
+
+Para tradução de parâmetros (a, b → físico), executar `python scripts/parameter_translation.py` e consultar `docs/15_parameter_translation_map.md`.
+
 
 Para consolidar os resultados da trilha de previsão (notebooks 10–17) em artefatos auditáveis, executar `python scripts/extract_results_layer.py`. O comando gera `results/prediction_notebooks_10_17.json` e `docs/13_results_extraction_layer.md`.
 
