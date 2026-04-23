@@ -30,13 +30,16 @@ Definir um protocolo mínimo de bancada para tentar distinguir operacionalmente 
 
 ---
 
-## Estratégia Comparativa
+## Estratégia Comparativa (Blind Test)
 
 1. Medir o decaimento do contraste interferométrico para pelo menos 5 valores distintos de $N$ dentro da janela mesoscópica.
-2. Realizar o ajuste (fitting) dos dados aos dois modelos concorrentes:
-   - **Regime A (Linear):** $V(N) = \exp(-a \cdot N \cdot \tau / 2)$
-   - **Regime B (Quadrático):** $V(N) = \exp(-b \cdot N^2 \cdot \tau / 2)$
-3. Comparar o erro residual e a métrica de distinguibilidade para determinar qual modelo melhor descreve o escalonamento observado.
+2. Realizar o ajuste (fitting) dos dados aos dois modelos concorrentes de forma cega:
+   - **Modelo A:** $V(N) = \exp(-\alpha \cdot f_A(N) \cdot \tau / 2)$
+   - **Modelo B:** $V(N) = \exp(-\beta \cdot f_B(N) \cdot \tau / 2)$
+3. O mapeamento entre $(f_A, f_B)$ e os regimes físicos (linear/quadrático) deve ficar sob custódia de um responsável externo à análise, em registro selado.
+4. Comparar erro residual e métrica de distinguibilidade sem acesso ao mapeamento.
+5. Congelar critérios e relatório técnico antes da abertura do registro selado.
+6. Abrir o registro apenas após congelamento para identificar qual regime corresponde ao melhor ajuste.
 
 ---
 
