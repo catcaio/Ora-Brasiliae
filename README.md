@@ -40,7 +40,7 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /bibliography/: fontes por confiança
 
 ## 8. Uso
-Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
+Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`17`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
 
 ## 9. Fingerprinting de outputs (auditabilidade)
 - baseline versionada: `fingerprints/notebook_outputs_fingerprints.json`
