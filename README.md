@@ -39,6 +39,9 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /docs/: escopo, ledger, glossário e mapeamento
 - /bibliography/: fontes por confiança
 
+### Documentos de validação externa
+- `docs/13_external_validation.md`: protocolo, checklist e critérios de aceite para validação externa auditável.
+
 ## 8. Uso
 Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
 
@@ -47,3 +50,11 @@ Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de q
 - FECHADO CONDICIONALMENTE: exige hipótese explícita.
 - COMPLETAMENTO CONSISTENTE: não quebra a teoria, mas não é inevitável.
 - HIPÓTESE EXTERNA: não derivada do núcleo.
+
+## 10. Regra operacional de EPICs
+
+Cada EPIC deve encerrar com:
+- outputs reproduzíveis (artefatos versionados e reexecutáveis);
+- validação auditável (checklist preenchido, evidências e parecer).
+
+O próximo bloco de trabalho só deve iniciar após validação completa do bloco anterior.

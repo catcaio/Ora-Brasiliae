@@ -11,6 +11,7 @@
 - [x] estratégia de ajuste entre modelos definida
 - [x] critério de sucesso pré-registrado
 - [x] limitações explícitas documentadas
+- [ ] protocolo de validação externa emitido e auditável (`docs/13_external_validation.md`)
 
 ---
 

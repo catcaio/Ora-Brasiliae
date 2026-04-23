@@ -30,3 +30,4 @@ Neste estágio, a "Teoria de Ora Brasiliae" designa estritamente o núcleo míni
 - **Completamentos:** Separados condicionalmente e consistentes.
 - **Previsões:** Ainda não validadas.
 - **Hipóteses externas:** Não tratadas como derivação.
+- **Validação externa (EPIC):** Pendente de execução formal; protocolo auditável definido em `docs/13_external_validation.md`.
