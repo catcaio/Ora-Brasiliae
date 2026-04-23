@@ -55,7 +55,7 @@ Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de q
 - COMPLETAMENTO CONSISTENTE: não quebra a teoria, mas não é inevitável.
 - HIPÓTESE EXTERNA: não derivada do núcleo.
 
-## 10. Reprodutibilidade de ambiente
+## 11. Reprodutibilidade de ambiente
 - `requirements.txt` define dependências diretas do projeto.
 - `requirements.lock` fixa versões exatas (incluindo transitivas) para execução determinística.
 - Para recriar ambiente auditável:
@@ -66,3 +66,12 @@ Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de q
 
 Sempre que `requirements.txt` mudar, regenerar `requirements.lock` em ambiente limpo antes de commitar.
 
+## 12. CI científico (notebooks 00–17)
+- Workflow GitHub Actions: `.github/workflows/ci-scientific-runner.yml`.
+- Runner executa notebooks `00` a `17` em ordem numérica com `nbconvert --execute --inplace`.
+- A pipeline falha no primeiro erro de execução e expõe stdout/stderr no log para auditoria.
+- Execução local equivalente:
+
+```bash
+python scripts/run_notebooks_smoke.py
+```
