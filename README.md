@@ -36,16 +36,13 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /gaps/: fechamentos condicionais e completamentos consistentes
 - /notebooks/: auditoria simbólica e numérica
 - /appendices/: histórico e exploração
-- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods, guias pré-experimentais e preparação experimental
+- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods, guias pré-experimentais, preparação experimental e faixas de viabilidade
 - /bibliography/: fontes por confiança
-- /data/: dados de entrada para pipelines experimentais
-- /results/: artefatos auditáveis gerados por scripts
 
 ## 8. Uso
-Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`18`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
+Ler docs/01_claim_minimo_irredutivel.md, docs/02_epistemic_ledger.md e docs/17_feasibility_ranges.md antes de qualquer notebook. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`19`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
 
 Para tradução de parâmetros (a, b → físico), executar `python scripts/parameter_translation.py` e consultar `docs/15_parameter_translation_map.md`.
-
 
 Para consolidar os resultados da trilha de previsão (notebooks 10–17) em artefatos auditáveis, executar `python scripts/extract_results_layer.py`. O comando gera `results/prediction_notebooks_10_17.json` e `docs/13_results_extraction_layer.md`.
 
@@ -78,9 +75,9 @@ Para a comparação operacional linear vs quadrático (MPV-55), executar:
 
 Sempre que `requirements.txt` mudar, regenerar `requirements.lock` em ambiente limpo antes de commitar.
 
-## 12. CI científico (notebooks 00–17)
+## 12. CI científico (notebooks 00–19)
 - Workflow GitHub Actions: `.github/workflows/ci-scientific-runner.yml`.
-- Runner executa notebooks `00` a `17` em ordem numérica com `nbconvert --execute --inplace`.
+- Runner executa notebooks `00` a `19` em ordem numérica com `nbconvert --execute --inplace`.
 - A pipeline falha no primeiro erro de execução e expõe stdout/stderr no log para auditoria.
 - Execução local equivalente:
 
