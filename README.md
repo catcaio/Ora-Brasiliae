@@ -42,6 +42,14 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 ## 8. Uso
 Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
 
+Para validação reprodutível e auditável dos notebooks 00–17:
+
+```bash
+python scripts/run_notebooks_smoke.py --timeout-seconds 600
+```
+
+O relatório de execução é salvo em `docs/reports/notebook_reproducibility_report.json`.
+
 ## 9. Regras de leitura epistemológica
 - DERIVADO: segue de definições e identidades padrão no domínio local.
 - FECHADO CONDICIONALMENTE: exige hipótese explícita.
