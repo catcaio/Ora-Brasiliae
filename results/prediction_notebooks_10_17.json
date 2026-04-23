@@ -1,0 +1,164 @@
+{
+  "notebook_10": {
+    "parameters": {
+      "a": 0.05,
+      "b": 0.005,
+      "threshold": 0.1
+    },
+    "critical_tau_table": [
+      {
+        "N": 10,
+        "tau_critical_regime_A": 9.21921921921922,
+        "tau_critical_regime_B": 9.21921921921922
+      },
+      {
+        "N": 20,
+        "tau_critical_regime_A": 4.614614614614615,
+        "tau_critical_regime_B": 2.3123123123123124
+      },
+      {
+        "N": 40,
+        "tau_critical_regime_A": 2.3123123123123124,
+        "tau_critical_regime_B": 0.5805805805805806
+      },
+      {
+        "N": 60,
+        "tau_critical_regime_A": 1.5415415415415414,
+        "tau_critical_regime_B": 0.2602602602602603
+      },
+      {
+        "N": 80,
+        "tau_critical_regime_A": 1.1611611611611612,
+        "tau_critical_regime_B": 0.15015015015015015
+      },
+      {
+        "N": 100,
+        "tau_critical_regime_A": 0.9309309309309309,
+        "tau_critical_regime_B": 0.10010010010010009
+      }
+    ]
+  },
+  "notebook_11": {
+    "parameters": {
+      "a": 0.05,
+      "b": 0.005,
+      "tau_ref": 1.0,
+      "threshold": 0.1
+    },
+    "n_star_regime_A": 93,
+    "n_star_regime_B": 31
+  },
+  "notebook_12": {
+    "calibration_target": {
+      "N": 100,
+      "V": 0.5,
+      "tau": 1.0
+    },
+    "gamma_required": 1.3862943611198906,
+    "a_calibrated": 0.013862943611198907,
+    "b_calibrated": 0.00013862943611198905
+  },
+  "notebook_13": {
+    "parameters": {
+      "a": 0.05,
+      "b": 0.005,
+      "tau_ref": 1.0,
+      "n_simulations": 50,
+      "noise_level": 0.1,
+      "jitter_level": 0.05,
+      "seed": 42
+    },
+    "avg_visibility_regime_A_at_N50": 0.2880319968887389,
+    "avg_visibility_regime_B_at_N50": 0.0021583903665000127,
+    "std_visibility_regime_A_at_N50": 0.04448784387110397,
+    "std_visibility_regime_B_at_N50": 0.0014680617770978217
+  },
+  "notebook_14": {
+    "parameters": {
+      "a": 0.05,
+      "b": 0.005,
+      "tau_ref": 1.0
+    },
+    "n_at_max_discrimination": 33,
+    "max_discrimination": 0.37252471923744634
+  },
+  "notebook_15": {
+    "parameters": {
+      "a": 0.014,
+      "b": 0.00014
+    },
+    "mapping": [
+      {
+        "system": "Gases Frios (ex: BEC em armadilha)",
+        "N_typical": 10000,
+        "gamma_experimental_range_s^-1": "0.1 - 10",
+        "gamma_pred_linear": 140.0,
+        "gamma_pred_quadratic": 13999.999999999998
+      },
+      {
+        "system": "Interferometria Molecular (ex: C60, macro-moléculas)",
+        "N_typical": 50,
+        "gamma_experimental_range_s^-1": "1 - 100",
+        "gamma_pred_linear": 0.7000000000000001,
+        "gamma_pred_quadratic": 0.35
+      },
+      {
+        "system": "Átomos de Rydberg (fortes interações dipolo-dipolo)",
+        "N_typical": 30,
+        "gamma_experimental_range_s^-1": "10^3 - 10^5",
+        "gamma_pred_linear": 0.42,
+        "gamma_pred_quadratic": 0.126
+      }
+    ]
+  },
+  "notebook_16": {
+    "parameters": {
+      "a": 0.014,
+      "b": 0.00014,
+      "tau": 1.0,
+      "gamma_th": 0.05,
+      "noise_floor": 0.1
+    },
+    "detectable_n_min": 20,
+    "detectable_n_max": 67
+  },
+  "notebook_17": {
+    "parameters": {
+      "a": 0.014,
+      "b": 0.00014,
+      "precision_required": 0.05
+    },
+    "windows": [
+      {
+        "tau_s": 0.1,
+        "n_min": null,
+        "n_max": null,
+        "max_separation": 0.046047708977786095
+      },
+      {
+        "tau_s": 0.5,
+        "n_min": 19,
+        "n_max": 150,
+        "max_separation": 0.13657453764864158
+      },
+      {
+        "tau_s": 1.0,
+        "n_min": 9,
+        "n_max": 150,
+        "max_separation": 0.14293019643000268
+      },
+      {
+        "tau_s": 2.0,
+        "n_min": 4,
+        "n_max": 150,
+        "max_separation": 0.22995890504359595
+      },
+      {
+        "tau_s": 5.0,
+        "n_min": 2,
+        "n_max": 78,
+        "max_separation": 0.3867827236269005
+      }
+    ]
+  }
+}
