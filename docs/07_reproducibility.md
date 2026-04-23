@@ -89,6 +89,20 @@ Com drift: saída com `status=drift_detected` e lista de notebooks alterados.
 
 ---
 
+
+## Teste adversarial reproduzível (MPV-65)
+
+Comando mínimo:
+
+1. `python scripts/simulate_false_positive.py --seed 65`
+
+Critério:
+
+- geração de `outputs/adversarial_false_positive_dataset.csv`;
+- emissão do evento JSON `adversarial_assessment` com `false_positive_detected=true`.
+
+---
+
 ## Status Epistemológico
 
 - Categoria: SUPORTE
