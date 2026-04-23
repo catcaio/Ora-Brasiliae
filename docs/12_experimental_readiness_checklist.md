@@ -11,6 +11,7 @@
 - [x] observável formalizado (`docs/13_observable_formalization.md`)
 - [x] precisão mínima estimada
 - [x] estratégia de ajuste entre modelos definida
+- [x] protocolo cego com ocultação do mapeamento de modelos definido
 - [x] critério de sucesso pré-registrado
 - [x] limitações explícitas documentadas
 
