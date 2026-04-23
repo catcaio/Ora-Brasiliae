@@ -36,11 +36,13 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /gaps/: fechamentos condicionais e completamentos consistentes
 - /notebooks/: auditoria simbólica e numérica
 - /appendices/: histórico e exploração
-- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods, guias pré-experimentais, preparação experimental e faixas de viabilidade
+- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods, guias pré-experimentais, preparação experimental, faixas de viabilidade e validações adversariais
 - /bibliography/: fontes por confiança
 
 ## 8. Uso
 Ler docs/01_claim_minimo_irredutivel.md, docs/02_epistemic_ledger.md e docs/17_feasibility_ranges.md antes de qualquer notebook. Para a trilha pré-experimental, usar em sequência docs/11_minimal_experimental_protocol.md, docs/12_experimental_readiness_checklist.md e docs/13_apparatus_spec.md. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`19`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
+
+Para validar o cenário adversarial de falso positivo (MPV-65), executar `python scripts/simulate_false_positive.py --seed 65` e auditar o artefato `outputs/adversarial_false_positive_dataset.csv`.
 
 Para tradução de parâmetros (a, b → físico), executar `python scripts/parameter_translation.py` e consultar `docs/15_parameter_translation_map.md`.
 
