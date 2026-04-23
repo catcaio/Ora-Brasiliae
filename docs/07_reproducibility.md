@@ -14,6 +14,14 @@ Este documento define o procedimento mínimo para reproduzir a execução dos no
 
 ---
 
+## Determinismo
+
+- seed global fixada em `20260423`
+- `PYTHONHASHSEED=20260423` durante a execução automatizada
+- notebooks com simulação pseudoaleatória usam gerador explícito (`numpy.random.default_rng`)
+
+---
+
 ## Ordem de execução
 
 1. notebooks/00_index.ipynb
@@ -24,12 +32,22 @@ Este documento define o procedimento mínimo para reproduzir a execução dos no
 6. notebooks/05_bianchi_and_phi.ipynb
 7. notebooks/06_newtonian_limit.ipynb
 8. notebooks/07_claim_minimo.ipynb
+9. notebooks/08_gap10_numeric_scan.ipynb
+10. notebooks/09_newtonian_parameter_scan.ipynb
+11. notebooks/10_visibility_prediction_scan.ipynb
+12. notebooks/11_nstar_threshold_exploration.ipynb
+13. notebooks/12_physical_parameter_calibration.ipynb
+14. notebooks/13_scaling_stability_test.ipynb
+15. notebooks/14_model_discrimination_metric.ipynb
+16. notebooks/15_physical_system_mapping.ipynb
+17. notebooks/16_signal_vs_noise_analysis.ipynb
+18. notebooks/17_experimental_window_estimation.ipynb
 
 ---
 
 ## Critério de sucesso
 
-- todos os notebooks executam sem erro
+- todos os notebooks `00`–`17` executam sem erro
 - outputs persistem
 - nenhuma previsão é promovida ao core durante a execução
 
