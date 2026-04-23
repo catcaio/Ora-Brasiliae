@@ -13,12 +13,12 @@ from pathlib import Path
 GLOBAL_SEED = "20260423"
 
 START_NOTEBOOK = 0
-END_NOTEBOOK = 18
+END_NOTEBOOK = 19
 NOTEBOOKS_DIR = Path("notebooks")
 
 
 def build_notebook_list() -> list[str]:
-    """Return ordered notebooks 00-17, validating file presence."""
+    """Return ordered notebooks 00-19, validating file presence."""
     notebooks: list[str] = []
     missing: list[str] = []
 
@@ -83,7 +83,7 @@ def main() -> int:
             return 1
         print(f"PASS: {notebook}", flush=True)
 
-    print("All notebooks 00-18 executed successfully.")
+    print("All notebooks 00-19 executed successfully.")
     return 0
 
 
