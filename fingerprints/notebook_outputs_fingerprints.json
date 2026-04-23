@@ -92,6 +92,11 @@
       "notebook": "notebooks/17_experimental_window_estimation.ipynb",
       "output_sha256": "3a80bed1e4f4fd7f929feb319f312369eec46d3aaad46f0eeedd712aea32aab1",
       "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/18_measurement_simulation.ipynb",
+      "output_sha256": "7f69585956964437e0dcbac81124605d84249061d47f6346bd076105997848fd",
+      "code_cell_count": 4
     }
   ]
 }

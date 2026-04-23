@@ -1,6 +1,6 @@
 """
 Smoke test runner for Ora Brasiliae notebooks.
-Executes notebooks 00-17 in order and fails on any execution error.
+Executes notebooks 00-18 in order and fails on any execution error.
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ NOTEBOOKS_DIR = Path("notebooks")
 
 
 def build_notebook_list() -> list[str]:
-    """Return ordered notebooks 00-19, validating file presence."""
+    """Return ordered notebooks 00-18, validating file presence."""
     notebooks: list[str] = []
     missing: list[str] = []
 
