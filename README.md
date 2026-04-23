@@ -36,7 +36,7 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /gaps/: fechamentos condicionais e completamentos consistentes
 - /notebooks/: auditoria simbólica e numérica
 - /appendices/: histórico e exploração
-- /docs/: escopo, ledger, glossário e mapeamento
+- /docs/: escopo, ledger, glossário, mapeamento e protocolos operacionais (inclui preparação de paper)
 - /bibliography/: fontes por confiança
 
 ## 8. Uso
@@ -47,3 +47,6 @@ Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de q
 - FECHADO CONDICIONALMENTE: exige hipótese explícita.
 - COMPLETAMENTO CONSISTENTE: não quebra a teoria, mas não é inevitável.
 - HIPÓTESE EXTERNA: não derivada do núcleo.
+
+## 10. Progresso para paper
+Para o fluxo de preparação de paper com gates sequenciais de outputs reproduzíveis e validação auditável, consultar `docs/13_paper_preparation_protocol.md`.
