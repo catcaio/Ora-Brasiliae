@@ -32,6 +32,25 @@ Este documento define o procedimento mínimo para reproduzir a execução dos no
 - todos os notebooks executam sem erro
 - outputs persistem
 - nenhuma previsão é promovida ao core durante a execução
+- fingerprints de output não apresentam drift em relação ao baseline versionado
+
+---
+
+## Fingerprinting de output
+
+Baseline no repositório:
+
+- `fingerprints/notebook_outputs_fingerprints.json`
+
+Comandos:
+
+- gerar/atualizar baseline:
+  - `python scripts/notebook_output_fingerprint.py generate`
+- detectar drift:
+  - `python scripts/notebook_output_fingerprint.py verify`
+
+Sem drift: saída com `status=pass`.
+Com drift: saída com `status=drift_detected` e lista de notebooks alterados.
 
 ---
 

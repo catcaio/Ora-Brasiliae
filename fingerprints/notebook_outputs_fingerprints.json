@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "fingerprint_scope": "code_cell_outputs",
+  "notebook_glob": "notebooks/*.ipynb",
+  "entries": [
+    {
+      "notebook": "notebooks/00_index.ipynb",
+      "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "code_cell_count": 0
+    },
+    {
+      "notebook": "notebooks/01_domain_and_definitions.ipynb",
+      "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/02_variational_operator.ipynb",
+      "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/03_modular_first_law.ipynb",
+      "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/04_gap10_symbolic.ipynb",
+      "output_sha256": "20315758ebc149186d855c843171840ebedeb30038a06264234eda072e18b043",
+      "code_cell_count": 2
+    },
+    {
+      "notebook": "notebooks/05_bianchi_and_phi.ipynb",
+      "output_sha256": "d97e96b842f3c9b131be6a54855f584ea14329d73c8060dc029f84ec308ddedd",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/06_newtonian_limit.ipynb",
+      "output_sha256": "c3e1acf131a43859c711055b4aa9aa2d59ab6feb2994b1692fd38ecfd5295354",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/07_claim_minimo.ipynb",
+      "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/08_gap10_numeric_scan.ipynb",
+      "output_sha256": "749c26eb24092c160caba54d241bd306c95105d1493a8e787c3080269a747bcf",
+      "code_cell_count": 2
+    },
+    {
+      "notebook": "notebooks/09_newtonian_parameter_scan.ipynb",
+      "output_sha256": "d87b7281060536d3d68961bdb2ed40c1162e3980f5e671f85a79f1e9a75f14a6",
+      "code_cell_count": 2
+    },
+    {
+      "notebook": "notebooks/10_visibility_prediction_scan.ipynb",
+      "output_sha256": "6d7150a628f9d940ff7a0c29ffe149f8b15a742b1c0fe138efa7870f35b9e4c9",
+      "code_cell_count": 3
+    },
+    {
+      "notebook": "notebooks/11_nstar_threshold_exploration.ipynb",
+      "output_sha256": "84584e2c6650bcb0491fb96191a2a672c0558965745185fea276fdef85c0967f",
+      "code_cell_count": 3
+    },
+    {
+      "notebook": "notebooks/12_physical_parameter_calibration.ipynb",
+      "output_sha256": "c32620ef965f5f9bd137f0e59489d36c77aeb79962242b8788b5f1e471eed7ce",
+      "code_cell_count": 3
+    },
+    {
+      "notebook": "notebooks/13_scaling_stability_test.ipynb",
+      "output_sha256": "62e413899145691c93fddbbdb000e9c164e5546e276933de751e38649f9ff093",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/14_model_discrimination_metric.ipynb",
+      "output_sha256": "dec9c991fb7aab84f50cab26f6aaa80b944de4802f77a7360b69ce2c12a7ad4c",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/15_physical_system_mapping.ipynb",
+      "output_sha256": "de7b5b57dbe0f0e072b86b23e78afd22b2fe84fc8498fd3d7226e53da84d2d30",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/16_signal_vs_noise_analysis.ipynb",
+      "output_sha256": "bde06558e166a1b8a44fc6383d9745a2bb53828f46173db3363c9775e0ecb2e7",
+      "code_cell_count": 1
+    },
+    {
+      "notebook": "notebooks/17_experimental_window_estimation.ipynb",
+      "output_sha256": "3a80bed1e4f4fd7f929feb319f312369eec46d3aaad46f0eeedd712aea32aab1",
+      "code_cell_count": 1
+    }
+  ]
+}
