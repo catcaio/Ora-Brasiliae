@@ -33,6 +33,11 @@ Consolidar os resultados da trilha de previsão (notebooks 10–17) em uma visã
 
 O sistema de **interferometria molecular** (ex: macromoléculas massivas) parece o mais plausível no estado atual do modelo, por operar naturalmente na faixa de $N$ onde o escalonamento quadrático diverge do linear sem que a decoerência total ocorra instantaneamente (como em gases frios de alto $N$).
 
+
+## Encadeamento com MPV-59
+
+A comparação de faixa operacional com literatura primária foi consolidada em `docs/13_feasibility_ranges.md` para manter separação entre síntese de simulação e decisão de viabilidade experimental.
+
 ---
 
 ## Restrições
