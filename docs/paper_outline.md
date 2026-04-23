@@ -34,6 +34,10 @@ Este arquivo organiza a futura reda\u00e7\u00e3o do artigo em uma estrutura de s
 - refer\u00eancia: core/05_minimal_einstein_recovery.md
 - refer\u00eancia: notebooks/07_claim_minimo.ipynb
 
+### 7A. Methods (gerada automaticamente)
+- referência: docs/13_methods_section.md
+- referência: scripts/generate_methods_section.py
+
 ### 8. Ap\u00eandice A \u2014 GAP-10 e depend\u00eancia de esquema
 - refer\u00eancia: gaps/gap10.md
 - refer\u00eancia: notebooks/04_gap10_symbolic.ipynb
