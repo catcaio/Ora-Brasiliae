@@ -36,7 +36,7 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /gaps/: fechamentos condicionais e completamentos consistentes
 - /notebooks/: auditoria simbólica e numérica
 - /appendices/: histórico e exploração
-- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional e seção Methods gerada
+- /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods e preparação experimental
 - /bibliography/: fontes por confiança
 
 ## 8. Uso
@@ -79,3 +79,8 @@ Sempre que `requirements.txt` mudar, regenerar `requirements.lock` em ambiente l
 ```bash
 python scripts/run_notebooks_smoke.py
 ```
+
+## 13. Trilha pré-experimental (simulação de coleta)
+- notebook: `notebooks/18_measurement_simulation.ipynb`
+- documentação: `docs/16_error_budget_analysis.md`
+- objetivo: simular campanha de coleta com erro instrumental controlado e decisão auditável entre modelos linear e quadrático.

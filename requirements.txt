@@ -6,3 +6,6 @@ jupyter
 nbconvert
 ipykernel
 ipython
+numpy
+pandas
+matplotlib
