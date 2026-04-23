@@ -38,6 +38,8 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /appendices/: histórico e exploração
 - /docs/: escopo, ledger, glossário, mapeamento, formalização observacional, seção Methods e preparação experimental
 - /bibliography/: fontes por confiança
+- /data/: dados de entrada para pipelines experimentais
+- /results/: artefatos auditáveis gerados por scripts
 
 ## 8. Uso
 Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`17`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
@@ -45,6 +47,9 @@ Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de q
 Para consolidar os resultados da trilha de previsão (notebooks 10–17) em artefatos auditáveis, executar `python scripts/extract_results_layer.py`. O comando gera `results/prediction_notebooks_10_17.json` e `docs/13_results_extraction_layer.md`.
 
 Para gerar a seção Methods auditável: `python scripts/generate_methods_section.py`.
+
+Para a comparação operacional linear vs quadrático (MPV-55), executar:
+`python scripts/fitting_pipeline.py --input data/mpv55_visibility_synthetic.csv --output results/mpv55_fitting_report.json --tau 1.0`
 
 ## 9. Fingerprinting de outputs (auditabilidade)
 - baseline versionada: `fingerprints/notebook_outputs_fingerprints.json`
