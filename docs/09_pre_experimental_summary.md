@@ -18,7 +18,7 @@ Consolidar os resultados da trilha de previsão (notebooks 10–17) em uma visã
 - **Interpretação:** Estes valores são tratados estritamente como uma estimativa de plausibilidade paramétrica baseada em referências físicas de decoerência, sem constituir medição real.
 
 ### Robustez
-- **Ruído e Jitter:** O contraste sobrevive a ruídos de decoerência basal de 10% ($\gamma_{th}$) e jitter temporal de 5% ($\tau$).
+- **Ruído e Jitter:** Em cenário de estresse, o contraste sobrevive a ruídos de decoerência basal de 30% ($\gamma_{th}$) e jitter temporal de 5% ($\tau$).
 - **Sobrevivência:** O sinal de distinguibilidade permanece acima do piso estatístico de 10% para $N$ entre 20 e 67.
 
 ### Janela de detectabilidade
