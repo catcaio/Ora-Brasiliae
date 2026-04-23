@@ -4,6 +4,7 @@
 
 - [x] parâmetros de previsão consolidados
 - [x] sistema físico-alvo escolhido
+- [x] setup mínimo de aparato definido
 - [x] janela operacional definida
 - [x] riscos de falso positivo mapeados
 - [x] observável definido
