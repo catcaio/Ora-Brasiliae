@@ -42,6 +42,7 @@ Este documento define o procedimento mínimo para reproduzir a execução dos no
 16. notebooks/15_physical_system_mapping.ipynb
 17. notebooks/16_signal_vs_noise_analysis.ipynb
 18. notebooks/17_experimental_window_estimation.ipynb
+19. python scripts/extract_results_layer.py
 
 ---
 
@@ -51,6 +52,7 @@ Este documento define o procedimento mínimo para reproduzir a execução dos no
 - outputs persistem
 - nenhuma previsão é promovida ao core durante a execução
 - fingerprints de output não apresentam drift em relação ao baseline versionado
+- artefatos `results/prediction_notebooks_10_17.json` e `docs/13_results_extraction_layer.md` são gerados sem erro
 
 ---
 
