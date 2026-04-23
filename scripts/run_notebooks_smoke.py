@@ -1,7 +1,9 @@
 """
 Smoke test runner for Ora Brasiliae notebooks.
-Executes all notebooks in order and reports pass/fail status.
+Executes notebooks 00-17 in order and fails on any execution error.
 """
+
+from __future__ import annotations
 
 import os
 import subprocess
@@ -10,21 +12,39 @@ from pathlib import Path
 
 GLOBAL_SEED = "20260423"
 
-
-def _discover_notebooks() -> list[str]:
-    notebooks_dir = Path("notebooks")
-    return sorted(str(path) for path in notebooks_dir.glob("[0-1][0-9]_*.ipynb"))
-
-
-NOTEBOOKS = _discover_notebooks()
+START_NOTEBOOK = 0
+END_NOTEBOOK = 17
+NOTEBOOKS_DIR = Path("notebooks")
 
 
-def run_notebook(path: str) -> bool:
-    """Execute a notebook via nbconvert. Returns True on success."""
+def build_notebook_list() -> list[str]:
+    """Return ordered notebooks 00-17, validating file presence."""
+    notebooks: list[str] = []
+    missing: list[str] = []
+
+    for index in range(START_NOTEBOOK, END_NOTEBOOK + 1):
+        pattern = f"{index:02d}_*.ipynb"
+        matches = sorted(NOTEBOOKS_DIR.glob(pattern))
+        if not matches:
+            missing.append(str(NOTEBOOKS_DIR / pattern))
+            continue
+        notebooks.append(matches[0].as_posix())
+
+    if missing:
+        raise FileNotFoundError(
+            "Notebooks obrigatórios ausentes para execução CI: "
+            + ", ".join(missing)
+        )
+
+    return notebooks
+
+
+def run_notebook(path: str) -> subprocess.CompletedProcess[str]:
+    """Execute a notebook via nbconvert and return process result."""
     env = os.environ.copy()
     env["PYTHONHASHSEED"] = GLOBAL_SEED
 
-    result = subprocess.run(
+    return subprocess.run(
         [
             sys.executable,
             "-m",
@@ -40,41 +60,32 @@ def run_notebook(path: str) -> bool:
         text=True,
         env=env,
     )
-    return result.returncode == 0
 
 
-def main() -> None:
-    # Resolve paths relative to repository root
-    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def main() -> int:
+    repo_root = Path(__file__).resolve().parents[1]
     os.chdir(repo_root)
 
-    if not NOTEBOOKS:
-        print("No notebooks found in notebooks/.")
-        sys.exit(1)
-
-    results: dict[str, str] = {}
+    notebooks = build_notebook_list()
     print(f"Global deterministic seed: {GLOBAL_SEED}")
-    for nb in NOTEBOOKS:
-        print(f"Running: {nb} ... ", end="", flush=True)
-        ok = run_notebook(nb)
-        status = "PASS" if ok else "FAIL"
-        results[nb] = status
-        print(status)
 
-    print("\n=== SUMMARY ===")
-    all_pass = True
-    for nb, status in results.items():
-        print(f"  {status}  {nb}")
-        if status == "FAIL":
-            all_pass = False
+    for notebook in notebooks:
+        print(f"Running: {notebook}", flush=True)
+        result = run_notebook(notebook)
+        if result.returncode != 0:
+            print(f"FAIL: {notebook}", flush=True)
+            if result.stdout:
+                print("--- stdout ---")
+                print(result.stdout)
+            if result.stderr:
+                print("--- stderr ---")
+                print(result.stderr)
+            return 1
+        print(f"PASS: {notebook}", flush=True)
 
-    if all_pass:
-        print("\nAll notebooks passed.")
-        sys.exit(0)
-
-    print("\nSome notebooks failed.")
-    sys.exit(1)
+    print("All notebooks 00-17 executed successfully.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
