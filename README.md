@@ -26,7 +26,7 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - qualquer interpretação física global do coeficiente do GAP-10.
 
 ## 6. Aberturas empíricas
-- observable V(tau);
+- observable V(tau) formalizado em docs/13_observable_formalization.md;
 - fronteira N*;
 - distinção observacional frente a GR / teorias escalar-tensoriais;
 - qualquer fenomenologia cosmológica ou de ondas gravitacionais.
@@ -36,7 +36,7 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /gaps/: fechamentos condicionais e completamentos consistentes
 - /notebooks/: auditoria simbólica e numérica
 - /appendices/: histórico e exploração
-- /docs/: escopo, ledger, glossário e mapeamento
+- /docs/: escopo, ledger, glossário, mapeamento e formalização observacional
 - /bibliography/: fontes por confiança
 
 ## 8. Uso

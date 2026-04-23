@@ -7,6 +7,7 @@
 - [x] janela operacional definida
 - [x] riscos de falso positivo mapeados
 - [x] observável definido
+- [x] observável formalizado (`docs/13_observable_formalization.md`)
 - [x] precisão mínima estimada
 - [x] estratégia de ajuste entre modelos definida
 - [x] critério de sucesso pré-registrado
