@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  notebooks-00-17:
+  notebooks-00-18:
     runs-on: ubuntu-latest
     timeout-minutes: 120
 
@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements.lock
 
-      - name: Execute notebooks 00-17
+      - name: Execute notebooks 00-18
         run: python scripts/run_notebooks_smoke.py
