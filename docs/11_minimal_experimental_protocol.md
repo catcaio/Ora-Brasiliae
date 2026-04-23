@@ -4,6 +4,8 @@
 
 Definir um protocolo mínimo de bancada para tentar distinguir operacionalmente os regimes linear e quadrático de perda de visibilidade.
 
+> Nota: A definição formal do observável, métricas de decisão e pacote auditável de artefatos estão consolidados em `docs/13_observable_formalization.md`.
+
 ---
 
 ## Sistema Prioritário
