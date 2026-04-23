@@ -13,7 +13,7 @@ from pathlib import Path
 GLOBAL_SEED = "20260423"
 
 START_NOTEBOOK = 0
-END_NOTEBOOK = 19
+END_NOTEBOOK = 18
 NOTEBOOKS_DIR = Path("notebooks")
 
 
@@ -83,7 +83,7 @@ def main() -> int:
             return 1
         print(f"PASS: {notebook}", flush=True)
 
-    print("All notebooks 00-19 executed successfully.")
+    print("All notebooks 00-18 executed successfully.")
     return 0
 
 

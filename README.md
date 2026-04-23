@@ -40,7 +40,7 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /bibliography/: fontes por confiança
 
 ## 8. Uso
-Ler docs/01_claim_minimo_irredutivel.md, docs/02_epistemic_ledger.md e docs/17_feasibility_ranges.md antes de qualquer notebook. Para a trilha pré-experimental, usar em sequência docs/11_minimal_experimental_protocol.md, docs/12_experimental_readiness_checklist.md e docs/13_apparatus_spec.md. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`19`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
+Ler docs/01_claim_minimo_irredutivel.md, docs/02_epistemic_ledger.md e docs/17_feasibility_ranges.md antes de qualquer notebook. Para a trilha pré-experimental, usar em sequência docs/11_minimal_experimental_protocol.md, docs/12_experimental_readiness_checklist.md e docs/13_apparatus_spec.md. Executar notebooks em ordem numérica. Para auditoria reproduzível de execução, usar `python scripts/run_notebooks_smoke.py`, que fixa `PYTHONHASHSEED=20260423` e executa os notebooks `00`–`18`. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
 
 Para validar o cenário adversarial de falso positivo (MPV-65), executar `python scripts/simulate_false_positive.py --seed 65` e auditar o artefato `outputs/adversarial_false_positive_dataset.csv`.
 
@@ -77,9 +77,9 @@ Para a comparação operacional linear vs quadrático (MPV-55), executar:
 
 Sempre que `requirements.txt` mudar, regenerar `requirements.lock` em ambiente limpo antes de commitar.
 
-## 12. CI científico (notebooks 00–19)
+## 12. CI científico (notebooks 00–18)
 - Workflow GitHub Actions: `.github/workflows/ci-scientific-runner.yml`.
-- Runner executa notebooks `00` a `19` em ordem numérica com `nbconvert --execute --inplace`.
+- Runner executa notebooks `00` a `18` em ordem numérica com `nbconvert --execute --inplace`.
 - A pipeline falha no primeiro erro de execução e expõe stdout/stderr no log para auditoria.
 - Execução local equivalente:
 
