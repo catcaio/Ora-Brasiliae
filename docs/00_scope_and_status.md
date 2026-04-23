@@ -30,3 +30,4 @@ Neste estágio, a "Teoria de Ora Brasiliae" designa estritamente o núcleo míni
 - **Completamentos:** Separados condicionalmente e consistentes.
 - **Previsões:** Ainda não validadas.
 - **Hipóteses externas:** Não tratadas como derivação.
+- **EPIC MPV-57 (Lab Readiness):** Preparada com gate de reprodutibilidade/auditabilidade, porém bloqueada por MPV-52.

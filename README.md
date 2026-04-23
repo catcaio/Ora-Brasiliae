@@ -40,7 +40,7 @@ G_{mu nu} k^mu k^nu = (8 pi G / c^4) <T_{mu nu}> k^mu k^nu
 - /bibliography/: fontes por confiança
 
 ## 8. Uso
-Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses.
+Ler docs/01_claim_minimo_irredutivel.md e docs/02_epistemic_ledger.md antes de qualquer notebook. Executar notebooks em ordem numérica. Não usar resultados de /gaps/ como se fossem parte do core sem verificar hipóteses. Para governança de prontidão por EPIC, consultar docs/13_epic_lab_readiness_gate.md.
 
 ## 9. Regras de leitura epistemológica
 - DERIVADO: segue de definições e identidades padrão no domínio local.
